@@ -1,0 +1,235 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AAF7870E-5358-405D-89AD-5BE6ED35BC5B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>AirBNB</RootNamespace>
+    <AssemblyName>AirBNB</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Model\Class_Helper.cs" />
+    <Compile Include="Model\Class_Registration.cs" />
+    <Compile Include="View\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="View\Form_casAddCommentScores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Form_casAddCommentScores.Designer.cs">
+      <DependentUpon>Form_casAddCommentScores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Form_cusReserveRoom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Form_cusReserveRoom.Designer.cs">
+      <DependentUpon>Form_cusReserveRoom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Form_customerCommentsRates.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Form_customerCommentsRates.Designer.cs">
+      <DependentUpon>Form_customerCommentsRates.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Form_customerMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Form_customerMenu.Designer.cs">
+      <DependentUpon>Form_customerMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Form_cusViewRoom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Form_cusViewRoom.Designer.cs">
+      <DependentUpon>Form_cusViewRoom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Form_ownerManageRooms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Form_ownerManageRooms.Designer.cs">
+      <DependentUpon>Form_ownerManageRooms.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Form_ownerMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Form_ownerMenu.Designer.cs">
+      <DependentUpon>Form_ownerMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Form_Registration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Form_Registration.Designer.cs">
+      <DependentUpon>Form_Registration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Form_roomRegistration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Form_roomRegistration.Designer.cs">
+      <DependentUpon>Form_roomRegistration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\UserControl_AddRoom.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\UserControl_AddRoom.Designer.cs">
+      <DependentUpon>UserControl_AddRoom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\UserControl_CommentsAndRates.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\UserControl_CommentsAndRates.Designer.cs">
+      <DependentUpon>UserControl_CommentsAndRates.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\UserControl_cusLoadComments.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\UserControl_cusLoadComments.Designer.cs">
+      <DependentUpon>UserControl_cusLoadComments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\UserControl_cusRoomList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\UserControl_cusRoomList.Designer.cs">
+      <DependentUpon>UserControl_cusRoomList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\UserControl_EditRoomFirst.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\UserControl_EditRoomFirst.Designer.cs">
+      <DependentUpon>UserControl_EditRoomFirst.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\UserControl_RentHistory.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\UserControl_RentHistory.Designer.cs">
+      <DependentUpon>UserControl_RentHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\UserControl_roomList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\UserControl_roomList.Designer.cs">
+      <DependentUpon>UserControl_roomList.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="View\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="View\Form_casAddCommentScores.resx">
+      <DependentUpon>Form_casAddCommentScores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Form_cusReserveRoom.resx">
+      <DependentUpon>Form_cusReserveRoom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Form_customerCommentsRates.resx">
+      <DependentUpon>Form_customerCommentsRates.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Form_customerMenu.resx">
+      <DependentUpon>Form_customerMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Form_cusViewRoom.resx">
+      <DependentUpon>Form_cusViewRoom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Form_ownerManageRooms.resx">
+      <DependentUpon>Form_ownerManageRooms.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Form_ownerMenu.resx">
+      <DependentUpon>Form_ownerMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Form_Registration.resx">
+      <DependentUpon>Form_Registration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Form_roomRegistration.resx">
+      <DependentUpon>Form_roomRegistration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\UserControl_AddRoom.resx">
+      <DependentUpon>UserControl_AddRoom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\UserControl_CommentsAndRates.resx">
+      <DependentUpon>UserControl_CommentsAndRates.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\UserControl_cusLoadComments.resx">
+      <DependentUpon>UserControl_cusLoadComments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\UserControl_cusRoomList.resx">
+      <DependentUpon>UserControl_cusRoomList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\UserControl_EditRoomFirst.resx">
+      <DependentUpon>UserControl_EditRoomFirst.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\UserControl_RentHistory.resx">
+      <DependentUpon>UserControl_RentHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\UserControl_roomList.resx">
+      <DependentUpon>UserControl_roomList.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
